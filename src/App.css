@@ -1,0 +1,15 @@
+/* Custom helper styles to add micro-interactions */
+.card {
+  transition: all 0.2s ease-in-out;
+}
+
+.bg-light-hover {
+  transition: all 0.25s ease;
+}
+
+.bg-light-hover:hover {
+  background-color: #f8f9fa !important;
+  border-color: #adb5bd !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transform: translateY(-1px);
+}
