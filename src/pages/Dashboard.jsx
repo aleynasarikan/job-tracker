@@ -102,7 +102,20 @@ export default function Dashboard() {
 
   const handleAddJob = (e) => {
     e.preventDefault();
-    alert(`Yeni ilan eklendi: ${newJobTitle} (${newJobDept})`);
+    const newApp = {
+      id: Date.now().toString(),
+      candidateName: "Yeni Aday",
+      position: newJobTitle, // The position they just created
+      dateOfBirth: "-",
+      exp: 0,
+      skills: "Değerlendirilmedi",
+      date: new Date().toLocaleDateString("tr-TR"),
+      status: "Yeni Başvuru",
+      avatar: "https://i.pravatar.cc/150?img=" + Math.floor(Math.random() * 70)
+    };
+    const updatedApps = [newApp, ...applications];
+    setApplications(updatedApps);
+    saveApplications(updatedApps);
     setShowModal(false);
     setNewJobTitle("");
     setNewJobDept("");
@@ -227,10 +240,9 @@ export default function Dashboard() {
                     </select>
                   </td>
                   <td style={{ textAlign: 'center' }}>
-                    <i className="bi bi-pencil-square action-icon" title="Düzenle"></i>
-                    <i
-                      className="bi bi-trash action-icon delete"
-                      title="Sil"
+                    <i 
+                      className="bi bi-trash action-icon delete" 
+                      title="Sil" 
                       onClick={() => handleDelete(app.id)}
                     ></i>
                   </td>
