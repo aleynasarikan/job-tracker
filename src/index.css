@@ -1,6 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg-color: #f4f5f5;
+  --panel-bg: #ffffff;
+  --text-primary: #1f2937;
+  --text-secondary: #6b7280;
+  --accent-red: #ef5350;
+  --accent-green: #e2f1ea;
+  --accent-green-text: #1b5e20;
+  --border-color: #e5e7eb;
+  --primary-btn: #1f2937;
+  --primary-btn-hover: #374151;
+}
+
 body {
   margin: 0;
   font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  background-color: #f8f9fa;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
 }

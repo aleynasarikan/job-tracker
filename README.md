@@ -1,16 +1,22 @@
-# React + Vite
+# İK Başvuru Yönetim Paneli (HR Dashboard)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, bir İnsan Kaynakları (İK) uzmanının şirkete gelen iş başvurularını düzenli ve profesyonel bir şekilde yönetmesini sağlayan modern bir web uygulamasıdır.
 
-Currently, two official plugins are available:
+## 🎯 Projenin Amacı
+İşe alım sürecindeki adayların takibini kolaylaştırmak amacıyla tasarlanmıştır. İK uzmanları bu panel üzerinden;
+- Sisteme yeni açılan ilanları ekleyebilir,
+- Başvuran adayların listesini görüntüleyebilir,
+- Adayların süreç durumlarını ("Yeni Başvuru", "Mülakat", "Teklif İletildi", "Reddedildi" vb.) tek tıkla güncelleyebilir,
+- İhtiyaç duyulmayan aday kayıtlarını sistemden silebilir.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 💻 Kullanılan Teknolojiler
+Proje, hızlı ve modern web standartlarına uygun olarak geliştirilmiştir:
+- **React.js**: Kullanıcı arayüzü ve bileşen mimarisi için kullanıldı.
+- **Vite**: Hızlı geliştirme ortamı (HMR) ve verimli build süreçleri için tercih edildi.
+- **CSS3 & Bootstrap Icons**: Minimalist, sade ve modern bir kullanıcı deneyimi (UI/UX) yaratmak için özel stiller ve ikonlar ile desteklendi.
+- **LocalStorage**: Geçici veri saklama ve simülasyon işlemleri için kullanıldı.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+![ekran görüntüsü](image.png)
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
